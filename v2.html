@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atul Rai - Java Fullstack Developer & Content Creator</title>
+  <meta name="description" content="Portfolio of Atul Rai, Java Fullstack Developer. Explore skills in Java, Spring Boot, React, tools, YouTube channel 'WanderBites with Atul', blog, and ways to support my work.">
+  <meta name="keywords" content="Atul Rai, Java Developer, Fullstack Developer, Spring Boot, React, Tailwind CSS, YouTube, Travel, Cooking, Programming Blog, Portfolio">
+  <meta name="author" content="Atul Rai">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Atul Rai - Java Fullstack Developer & Content Creator">
+  <meta property="og:description" content="Portfolio of Atul Rai, Java Fullstack Developer. Explore skills in Java, Spring Boot, React, tools, YouTube channel 'WanderBites with Atul', blog, and ways to support my work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atulrai.in/">
+  <meta property="og:image" content="https://atulrai.in/assets/img/atul.png">
+  <meta property="og:site_name" content="Atul Rai - Java Fullstack Developer & Content Creator">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Atul Rai - Java Fullstack Developer & Content Creator">
+  <meta name="twitter:description" content="Portfolio of Atul Rai, Java Fullstack Developer. Explore skills in Java, Spring Boot, React, tools, YouTube channel 'WanderBites with Atul', blog, and ways to support my work.">
+  <meta name="twitter:image" content="https://atulrai.in/assets/img/atul.png">
+  <meta name="twitter:creator" content="@iatulrai">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://atulrai.in/assets/img/atul.png" type="image/x-icon">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Atul Rai",
+    "url": "https://atulrai.in/",
+    "sameAs": [
+      "https://in.linkedin.com/in/iatulrai",
+      "https://x.com/iatulrai",
+      "https://www.instagram.com/iatulrai/",
+      "https://www.youtube.com/@iatulrai"
+    ],
+    "jobTitle": "Java Fullstack Developer",
+    "description": "Atul Rai is a Java Fullstack Developer and content creator sharing insights on coding, travel, and cooking.",
+    "image": "https://atulrai.in/assets/img/atul.png"
+  }
+  </script>
+
+  <!-- Custom Styles -->
+  <style>
+    html { scroll-behavior: smooth; }
+    .progress-bar { width: 0; transition: width 1.5s ease-in-out, box-shadow 0.3s ease; }
+    .progress-container { opacity: 0; transform: translateY(20px); transition: opacity 1s ease, transform 1s ease; }
+    .progress-container.visible { opacity: 1; transform: translateY(0); }
+    .progress-bar:hover { box-shadow: 0 0 10px rgba(0,0,0,0.3); filter: brightness(1.2); }
+    .dark body { background-color: #1f2937; color: #f9fafb; }
+    .dark .bg-white { background-color: #374151 !important; }
+    .dark .bg-gray-100 { background-color: #4b5563 !important; }
+    .dark .text-gray-600 { color: #d1d5db !important; }
+    .change-theme { cursor: pointer; font-size: 1.5rem; }
+  </style>
+</head>
+
+<body id="top" class="bg-gray-50 text-gray-800 font-sans transition-colors duration-500">
+
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+      <h1 class="text-2xl font-bold">
+  <a href="#top" class="hover:underline">Atul Rai</a>
+</h1>
+
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#skills" class="hover:underline">Skills</a>
+        <a href="#youtube" class="hover:underline">YouTube</a>
+        <a href="#blog" class="hover:underline">Blog</a>
+        <a href="#donate" class="hover:underline">Donate</a>
+        <i class="ri-moon-line change-theme ml-4" id="theme-button"></i>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <i id="mobile-menu-btn" class="ri-menu-line text-2xl cursor-pointer"></i>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden flex-col md:hidden bg-indigo-600 text-white px-4 py-4 space-y-4">
+      <a href="#skills" class="block hover:underline">Skills</a>
+      <a href="#youtube" class="block hover:underline">YouTube</a>
+      <a href="#blog" class="block hover:underline">Blog</a>
+      <a href="#donate" class="block hover:underline">Donate</a>
+      <i class="ri-moon-line change-theme" id="theme-button-mobile"></i>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-12 sm:py-16 md:py-20 bg-white shadow-sm transition-colors duration-500">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">Java Fullstack Developer</h2>
+    <p class="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+      I build web applications with Java, Spring Boot, React, and modern technologies. 
+      Passionate about coding, traveling, and creating content around food and travel.
+    </p>
+    <div class="mt-6">
+      <a href="#" class="bg-indigo-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow hover:bg-indigo-700">Download CV</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <h3 class="text-2xl sm:text-3xl font-bold mb-8 text-center">Skills</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+
+      <!-- Programming Languages -->
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 progress-container">
+        <h4 class="font-bold mb-4 text-lg sm:text-xl">Programming Languages</h4>
+        <ul class="space-y-3 sm:space-y-4">
+          <li><p class="font-semibold">Java - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-indigo-600 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">PL/SQL - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-indigo-600 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">JavaScript - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-indigo-600 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">JSP & Servlet - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-indigo-600 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Python - Basic</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-indigo-600 h-2 sm:h-3 rounded-full progress-bar" data-width="40%"></div></div></li>
+        </ul>
+      </div>
+
+      <!-- Frontend Technologies -->
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 progress-container">
+        <h4 class="font-bold mb-4 text-lg sm:text-xl">Frontend Technologies</h4>
+        <ul class="space-y-3 sm:space-y-4">
+          <li><p class="font-semibold">HTML - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">CSS - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">jQuery - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">React - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Bootstrap - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+        </ul>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 progress-container">
+        <h4 class="font-bold mb-4 text-lg sm:text-xl">Frameworks</h4>
+        <ul class="space-y-3 sm:space-y-4">
+          <li><p class="font-semibold">Spring Boot - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Spring Core - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Spring MVC - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Struts 2 - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Spring Security - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Spring Data JPA - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Hibernate - Basic</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="40%"></div></div></li>
+          <li><p class="font-semibold">JDBC - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-green-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 progress-container">
+        <h4 class="font-bold mb-4 text-lg sm:text-xl">Tools</h4>
+        <ul class="space-y-3 sm:space-y-4">
+          <li><p class="font-semibold">IntelliJ IDEA - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Eclipse - Advanced</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="90%"></div></div></li>
+          <li><p class="font-semibold">Git - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">SVN - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Jira - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Jacoco - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">SonarLint - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">Swagger 2 - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-yellow-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+        </ul>
+      </div>
+
+      <!-- Database -->
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 progress-container">
+        <h4 class="font-bold mb-4 text-lg sm:text-xl">Database</h4>
+        <ul class="space-y-3 sm:space-y-4">
+          <li><p class="font-semibold">Oracle - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-purple-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">MongoDB - Basic</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-purple-500 h-2 sm:h-3 rounded-full progress-bar" data-width="40%"></div></div></li>
+          <li><p class="font-semibold">MySQL - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-purple-500 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+        </ul>
+      </div>
+
+      <!-- Report -->
+      <div class="bg-white shadow-md rounded-lg p-4 sm:p-6 progress-container">
+        <h4 class="font-bold mb-4 text-lg sm:text-xl">Report</h4>
+        <ul class="space-y-3 sm:space-y-4">
+          <li><p class="font-semibold">Jasper Report - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-600 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+          <li><p class="font-semibold">iText - Intermediate</p><div class="w-full bg-gray-200 h-2 sm:h-3 rounded-full"><div class="bg-pink-600 h-2 sm:h-3 rounded-full progress-bar" data-width="70%"></div></div></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- YouTube Section -->
+  <section id="youtube" class="bg-gradient-to-r from-pink-500 to-red-500 text-white py-12 sm:py-16 md:py-20 text-center transition-colors duration-500">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">WanderBites with Atul</h3>
+    <p class="max-w-2xl mx-auto mb-6 text-sm sm:text-base md:text-lg">
+      On my YouTube channel, I share my journey through <span class="font-semibold">travel, cooking, and travel hacks</span>. 
+      Join me as I explore cultures, cuisines, and experiences across the globe.
+    </p>
+    <a href="https://www.youtube.com/@iatulrai" target="_blank" class="bg-white text-red-600 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold shadow hover:bg-gray-100">Visit Channel</a>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="bg-gray-100 py-12 sm:py-16 md:py-20 text-center transition-colors duration-500">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">My Blog - Websparrow</h3>
+    <p class="max-w-2xl mx-auto mb-6 text-sm sm:text-base md:text-lg text-gray-700">
+      I share insights, tutorials, and experiences about programming, development tips, and technology trends on my blog.
+      Check out the latest posts and guides to improve your skills and stay updated.
+    </p>
+    <a href="https://websparrow.org/" target="_blank" class="bg-indigo-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold shadow hover:bg-indigo-700">Visit Blog</a>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate" class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Support My Work</h3>
+    <p class="text-sm sm:text-base md:text-lg text-gray-600 mb-10">
+      If you enjoy my content and would like to support me, consider making a donation. 
+      Your support helps me keep creating valuable projects, tutorials, and videos.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
+      <a href="https://www.paypal.com/paypalme/websparrow" target="_blank" class="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow hover:bg-blue-700">Donate with PayPal</a>
+      <a href="https://buymeacoffee.com/iatulrai" target="_blank" class="bg-yellow-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow hover:bg-yellow-600">Buy Me a Coffee ☕</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <p>© Atul Rai. All rights reserved.</p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="https://in.linkedin.com/in/iatulrai" target="_blank" class="hover:text-blue-400"><i class="ri-linkedin-box-fill text-2xl"></i></a>
+       <a href="https://x.com/iatulrai" target="_blank" class="hover:text-blue-400">
+  <i class="ri-twitter-line text-2xl"></i>
+</a>
+
+        <a href="https://www.instagram.com/iatulrai/" target="_blank" class="hover:text-pink-400"><i class="ri-instagram-line text-2xl"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Animate progress bars
+    const progressContainers = document.querySelectorAll('.progress-container');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          const bars = entry.target.querySelectorAll('.progress-bar');
+          bars.forEach(bar => bar.style.width = bar.getAttribute('data-width'));
+        }
+      });
+    }, { threshold: 0.5 });
+    progressContainers.forEach(container => observer.observe(container));
+
+    // Dark/Light toggle
+    const themeBtns = document.querySelectorAll('#theme-button, #theme-button-mobile');
+    themeBtns.forEach(btn => btn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      btn.classList.toggle('ri-moon-line');
+      btn.classList.toggle('ri-sun-line');
+    }));
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+  // Smooth scrollspy for active menu links
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("header nav a, #mobile-menu a");
+
+  function activateMenu() {
+    let scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+      const sectionHeight = section.offsetHeight;
+      const sectionTop = section.offsetTop - 80; // header offset
+      const sectionId = section.getAttribute("id");
+
+      if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight){
+        navLinks.forEach(link => {
+          link.classList.remove("underline");
+          if(link.getAttribute("href") === "#" + sectionId){
+            link.classList.add("underline");
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", activateMenu);
+  window.addEventListener("load", activateMenu);
+</script>
+
+
+</body>
+</html>
